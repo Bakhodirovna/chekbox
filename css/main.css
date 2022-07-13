@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.form>label>span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.form__label-box{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.form__label-box>label{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.form__label-box-title{
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form__label-box>label>input:checked~span{
+    color: #ccc;
+}
+.form__label-box>label>input:disabled~span{
+    color: #ccc
+}
+.form__label-box>label>input:disabled~div{
+    color: #ccc
+}
+.form__label-box-check{
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+.disabled{
+    border-color:#ccc ;
+}
+.form__label-box>label>input{
+    appearance: none;
+}
+.form__list-1>input:checked ~ div{
+    background-image: url(../ikonkalar/table-tennis.png) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.form__list-2>input:checked ~ div{
+    background-image: url(../ikonkalar/basketball-ball.png) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.form__list-3>input:checked ~ div{
+    background-image: url(../ikonkalar/volleyball-ball.png) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.form__list-4>input:checked ~ div{
+    background-image: url(../ikonkalar/hockey-puck.png) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.form__btn{
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 50px;
+    color: black;
+    background-color: rgb(165, 165, 165);
+    border:1px solid rgb(227, 227, 227);
+    padding: 3px 0;
+    border-radius: 3px;
+    font-weight: 600;
+    box-shadow: 3px 0 3px black;
+}
+.form__btn:hover{
+    box-shadow:3px 0 4px 1px black ;
+}
+
